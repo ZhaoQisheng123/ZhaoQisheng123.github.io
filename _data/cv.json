@@ -1,152 +1,208 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Qisheng Zhao",
+    "email": "2301213177@stu.pku.edu.cn",
+    "phone": "15279400369",
+    "website": "https://ZhaoQisheng123.github.io",
+    "summary": "Master's student at Peking University focusing on multi-robot task and motion planning, with interests in mobile manipulation and autonomous robotics.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Beijing",
+      "countryCode": "CN",
+      "region": "China"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "ZhaoQisheng123",
+        "url": "https://github.com/ZhaoQisheng123"
+      },
+      {
+        "network": "WeChat",
+        "username": "zqs1098840583",
+        "url": ""
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "Zhiyue Space Intelligent Technology Co., Ltd.",
+      "position": "Autonomous Exploration and Navigation Module Leader",
+      "website": "",
+      "startDate": "2025-04",
+      "endDate": "2025-08",
+      "summary": "Responsible for the design and development of the company's active 3D reconstruction robot's autonomous exploration and navigation module, achieving efficient exploration, reconstruction, and motion planning.",
+      "highlights": [
+        "Design and development of exploration and navigation algorithm modules",
+        "ROS integration and deployment on the robot chassis",
+        "Experimental testing in complex and diverse scenarios"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "ZF China Investment Co., Ltd.",
+      "position": "Software Testing Department Intern",
+      "website": "",
+      "startDate": "2023-02",
+      "endDate": "2023-05",
+      "summary": "Participated in functional testing and regression verification of in-vehicle software systems, assisted in completing multi-version system functional verification and automated script writing.",
+      "highlights": [
+        "Writing Python-based functional modules and test scripts",
+        "Writing test manuals and reproduction process documentation"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "education": [
+    {
+      "institution": "Peking University",
+      "area": "Advanced Manufacturing and Intelligent Systems",
+      "studyType": "Master's Degree",
+      "startDate": "2023-09",
+      "endDate": "2026-07",
+      "gpa": "3.66/4.00",
+      "courses": [
+        "Artificial Intelligence and Autonomous Robots",
+        "Principles of Reinforcement Learning",
+        "AI Methods and Applications",
+        "Hybrid Control Systems",
+        "Advanced Robot Control",
+        "Multi-Agent Systems",
+        "Python Big Data Analysis Principles and Applications",
+        "Data Visualization"
+      ]
+    },
+    {
+      "institution": "Tongji University",
+      "area": "Mechatronics Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2019-09",
+      "endDate": "2023-07",
+      "gpa": "4.62/5.00",
+      "courses": [
+        "Principles of Automatic Control",
+        "Signals and Systems",
+        "Network and Industrial Communication",
+        "System Modeling and Simulation",
+        "Python",
+        "C++",
+        "Linear Algebra"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Task Decision Algorithms",
+      "level": "Advanced",
+      "keywords": [
+        "Automata",
+        "Behavior Trees",
+        "Formal Methods",
+        "Reinforcement Learning"
+      ]
+    },
+    {
+      "name": "Motion Planning Algorithms",
+      "level": "Advanced",
+      "keywords": [
+        "Dijkstra",
+        "A*",
+        "RRT",
+        "Optimal Transport"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "C++",
+        "ROS",
+        "Navigation2",
+        "Linux",
+        "LTL2BA"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Advanced",
+      "certifications": [
+        "CET-6 (559)",
+        "IELTS (6.5)"
+      ]
+    },
+    {
+      "language": "German",
+      "fluency": "Intermediate",
+      "certifications": [
+        "TestDaf (19/20)"
+      ]
+    },
+    {
+      "language": "Chinese",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Multi-robot Systems",
+      "keywords": [
+        "Task Allocation",
+        "Motion Planning",
+        "Coordination"
+      ]
+    },
+    {
+      "name": "Autonomous Robotics",
+      "keywords": [
+        "SLAM",
+        "Navigation",
+        "Exploration"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "keywords": [
+        "Multi-agent Systems",
+        "Game Theory",
+        "Decision Making"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "UMBRELLA: Uncertainty-aware Multi-roBot REactive Coordination under Dynamic Temporal Logic TAsks",
+      "publisher": "IEEE International Conference on Robotics and Automation (ICRA)",
+      "releaseDate": "2025-05-01",
+      "website": "",
+      "summary": "First author paper on multi-robot coordination under uncertainty and dynamic temporal logic tasks."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "presentations": [],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
+      "name": "Multi-robot Reactive Collaborative Planning",
+      "category": "research",
+      "date": "2024-06",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "Project focusing on task allocation algorithms for heterogeneous robot systems with complex temporal constraints and mobile target associations."
+    },
+    {
+      "name": "Honor of Kings Battle Strategy Optimization",
+      "category": "research",
+      "date": "2025-06",
+      "url": "",
+      "description": "Reinforcement learning adversarial model for game scenario with five heterogeneous intelligent agents fighting a tyrant."
+    },
+    {
+      "name": "Mujoco Robotic Arm Grasping Simulation",
+      "category": "research",
+      "date": "2025-05",
+      "url": "",
+      "description": "GraspNet model deployment in Mujoco simulation for robotic arm grasping experiments in multi-object scenarios."
     }
   ]
 }
