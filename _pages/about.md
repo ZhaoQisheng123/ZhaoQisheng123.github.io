@@ -18,7 +18,7 @@ My research focuses on **multi-robot coordination, task decision-making, and mot
 
 🔍 Opportunities
 ======
-I am currently seeking **Ph.D. positions and career opportunities in the field of embodied robotics**. If you have any suitable opportunities, please feel free to contact me anytime!
+I am currently seeking **Ph.D. positions and career opportunities in the field of embodied intelligence**. If you have any suitable opportunities, please feel free to contact me anytime!
 
 📚 Education
 ======

@@ -23,7 +23,7 @@ repository               : "ZhaoQisheng123/ZhaoQisheng123.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "ZQS-02.jpg"
+  avatar           : "ZQS-Profile.jpg"
   name             : "Qisheng Zhao"
   pronouns         : "he/him"  
   bio              : "Focusing on multi-robot task and motion planning, with interests in mobile manipulation."
