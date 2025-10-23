@@ -12,9 +12,9 @@ I am currently pursuing a Master's degree at the School of Advanced Manufacturin
 Prior to that, I received my Bachelor's degree in Mechatronics Engineering from the CDHAW at Tongji University.
 
 
-My research focuses on **multi-robot coordination, task decision-making, and motion planning in dynamic and unknown environments**. I am also deeply interested in robotic mobile manipulation.
+My research focuses on **multi-robot coordination, task decision-making, and motion planning in dynamic and unknown environments**. I am particularly interested in **robotic mobile manipulation under long-horizon sequential tasks**, where robots must perform complex manipulation operations while navigating through dynamic environments over extended time periods.
 
-🤖**Long-term Goal:**  I hope to contribute to the advancement of robotics by exploring cutting-edge algorithms while helping robots become practical products that can enter thousands of households.
+🤖**Long-term Goal:**  I hope to contribute to the advancement of robotics by developing robust algorithms for long-horizon mobile manipulation tasks, enabling robots to perform complex sequential operations in real-world environments. My vision is to bridge the gap between theoretical multi-robot coordination and practical household robotics applications, ultimately helping robots become reliable assistants that can seamlessly integrate into daily life.
 
 🔍 Opportunities
 ======

@@ -146,6 +146,14 @@
   ],
   "interests": [
     {
+      "name": "Long-horizon Mobile Manipulation",
+      "keywords": [
+        "Sequential Task Planning",
+        "Mobile Manipulation",
+        "Long-term Coordination"
+      ]
+    },
+    {
       "name": "Multi-robot Systems",
       "keywords": [
         "Task Allocation",
@@ -162,11 +170,11 @@
       ]
     },
     {
-      "name": "Reinforcement Learning",
+      "name": "Formal Methods in Robotics",
       "keywords": [
-        "Multi-agent Systems",
-        "Game Theory",
-        "Decision Making"
+        "Temporal Logic",
+        "Verification",
+        "Uncertainty Quantification"
       ]
     }
   ],
