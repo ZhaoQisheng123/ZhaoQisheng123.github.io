@@ -1,0 +1,65 @@
+{% assign project = include.project %}
+{% assign heading = include.heading | default: 'h3' %}
+<article class="project-row{% if include.details %} project-row--detail{% endif %}" id="{{ project.id }}">
+  {% unless include.details %}
+  <a class="project-thumbnail" href="{{ '/projects/' | relative_url }}#{{ project.id }}" aria-label="Read about {{ project.title | escape }}">
+    <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.thumbnail_alt | escape }}" width="{{ project.thumbnail_width }}" height="{{ project.thumbnail_height }}" loading="lazy">
+  </a>
+  {% endunless %}
+  <div class="project-info">
+    <{{ heading }} class="project-title">{% if include.link_title %}<a href="{{ '/projects/' | relative_url }}#{{ project.id }}">{{ project.title }}</a>{% else %}{{ project.title }}{% endif %}</{{ heading }}>
+    {% if include.details %}
+    <ul class="project-description">
+      <li>{{ project.summary }}
+        <ul class="project-highlights">
+          {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+        </ul>
+      </li>
+      {% if project.prototype %}
+      <li class="project-prototype"><strong>{{ project.prototype.title }}.</strong> {{ project.prototype.summary }}
+        <ul class="project-highlights">
+          {% for highlight in project.prototype.highlights %}<li>{{ highlight }}</li>{% endfor %}
+        </ul>
+      </li>
+      {% endif %}
+    </ul>
+    {% if project.benchmarks %}
+    <div class="project-benchmarks">
+      <h3 class="project-benchmark-title">{{ project.benchmarks.title }}</h3>
+      <table>
+        <caption>{{ project.benchmarks.caption }}</caption>
+        <thead><tr><th scope="col">Task sites</th><th scope="col">Agents</th><th scope="col">Initial (s)</th><th scope="col">Replan (s)</th></tr></thead>
+        <tbody>{% for result in project.benchmarks.cases %}<tr><th scope="row">{{ result.task_sites }}</th><td>{{ result.agents }}</td><td>{{ result.initial }}</td><td>{{ result.replan }}</td></tr>{% endfor %}</tbody>
+      </table>
+    </div>
+    {% endif %}
+    {% else %}
+    <p>{{ project.summary }}</p>
+    {% endif %}
+  </div>
+  {% if include.details %}{% if project.images or project.videos %}
+  {% assign image_count = project.images.size | default: 0 %}
+  {% assign video_count = project.videos.size | default: 0 %}
+  {% assign media_count = image_count | plus: video_count %}
+  <div class="project-media-grid{% if media_count == 1 or project.media_layout == "stacked" %} project-media-grid--single{% endif %}"{% if project.images %} id="{{ project.id }}-gallery"{% endif %}>
+    {% assign default_media_order = "videos,images" | split: "," %}
+    {% assign media_order = project.media_order | default: default_media_order %}
+    {% for media_type in media_order %}
+    {% case media_type %}
+    {% when 'videos' %}
+    {% for video in project.videos %}
+    {% assign video_id = project.id | append: '-video-' | append: forloop.index %}
+    {% include video-player.html video=video id=video_id %}
+    {% endfor %}
+    {% when 'images' %}
+    {% for item in project.images %}
+    <figure class="project-media">
+      <a href="{{ item.src | relative_url }}" aria-label="View full-size image: {{ item.alt | escape }}"><img src="{{ item.src | relative_url }}" alt="{{ item.alt | escape }}" width="{{ item.width }}" height="{{ item.height }}" loading="lazy"></a>
+      {% if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
+    {% endcase %}
+    {% endfor %}
+  </div>
+  {% endif %}{% endif %}
+</article>

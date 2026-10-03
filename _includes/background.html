@@ -1,0 +1,37 @@
+<div class="about-background">
+  <section id="education" class="background-section" aria-labelledby="education-heading">
+    <h3 id="education-heading" class="background-section-title">Education</h3>
+    {% for entry in site.data.cv.education %}
+    <article class="background-entry education-entry">
+      <div class="background-period">
+        <p class="background-date">{{ entry.startDate | append: '-01' | date: '%b %Y' }}–{{ entry.endDate | append: '-01' | date: '%b %Y' }}</p>
+      </div>
+      <div class="education-content">
+        {% if entry.logo %}<img class="education-emblem" src="{{ entry.logo | relative_url }}" alt="{{ entry.institution }} emblem" width="64" height="64" loading="lazy">{% endif %}
+        <div class="background-info">
+          <h4>{{ entry.institution }}</h4>
+          {% if entry.department %}<p class="education-college">{{ entry.department }}</p>{% endif %}
+          <p class="background-role">{{ entry.studyType }} in {{ entry.area }}</p>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+  <section id="experience" class="background-section" aria-labelledby="experience-heading">
+    <h3 id="experience-heading" class="background-section-title">Experience</h3>
+    {% for entry in site.data.cv.work %}
+    <article class="background-entry experience-entry">
+      <div class="background-period">
+        <p class="background-date{% if entry.current %} background-current{% endif %}">{% if entry.current %}Current{% elsif entry.endDate %}{{ entry.startDate | append: '-01' | date: '%b %Y' }}–{{ entry.endDate | append: '-01' | date: '%b %Y' }}{% else %}Started {{ entry.startDate | append: '-01' | date: '%b %Y' }}{% endif %}</p>
+      </div>
+      <div class="experience-content">
+        {% if entry.logo %}<img class="company-emblem company-emblem--{{ entry.logoStyle }}" src="{{ entry.logo | relative_url }}" alt="{{ entry.company }} logo" width="64" height="64" loading="lazy">{% endif %}
+        <div class="background-info">
+          <h4>{{ entry.company }}</h4>
+          <p class="background-role">{{ entry.position }}</p>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+</div>

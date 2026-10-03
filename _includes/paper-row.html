@@ -1,0 +1,10 @@
+{% assign paper = include.paper %}
+<article class="paper-row">
+  <a class="paper-thumbnail" href="{{ paper.url | relative_url }}" aria-label="Read about {{ paper.title | escape }}">
+    <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" loading="lazy" width="{{ paper.image_width }}" height="{{ paper.image_height }}">
+  </a>
+  <div class="paper-info">
+    <h3 class="paper-title"><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+    {% include paper-metadata.html paper=paper %}
+  </div>
+</article>

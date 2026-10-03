@@ -1,36 +1,28 @@
 ---
-layout: archive
+layout: academic
 title: "Publications"
 permalink: /publications/
-author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<section class="publications-section" aria-labelledby="papers">
+  <h2 id="papers">Papers</h2>
+  <p class="author-note">* Equal contribution</p>
+  <div class="paper-list">
+  {% assign papers = site.publications | sort: 'date' | reverse %}
+  {% for paper in papers %}
+  {% include paper-row.html paper=paper %}
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+  </div>
+</section>
+
+<section class="publications-section" aria-labelledby="patents">
+  <h2 id="patents">Patents</h2>
+  <ol class="patent-list" lang="zh">
+  {% for patent in site.data.patents %}
+    <li>
+      <h3 class="patent-title">{{ patent.title }}</h3>
+      <p class="patent-authors">{% for author in patent.authors %}{% if author == '赵祺晟' %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}<span class="patent-separator">、</span>{% endunless %}{% endfor %}</p>
+    </li>
   {% endfor %}
-{% endif %}
-
-
-
+  </ol>
+</section>

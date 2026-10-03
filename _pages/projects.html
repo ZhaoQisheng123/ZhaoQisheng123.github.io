@@ -1,0 +1,10 @@
+---
+layout: academic
+title: Projects
+permalink: /projects/
+description: Projects in surgical robotics, autonomous navigation, simulation, and multi-robot planning, with demonstrations.
+---
+
+<div class="project-list">
+  {% for project in site.data.projects %}{% include project-row.html project=project heading='h2' details=true %}{% endfor %}
+</div>

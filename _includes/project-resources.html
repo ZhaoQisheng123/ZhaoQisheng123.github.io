@@ -1,0 +1,9 @@
+{% assign project = include.project %}
+{% if project.images or project.videos or project.links %}
+<li class="project-links">
+  {% if project.videos %}Demonstrations.{% elsif project.images %}Project materials.{% else %}Related work.{% endif %}
+  {% if project.images %}<a href="#{{ project.id }}-gallery">[Images]</a>{% endif %}
+  {% for link in project.links %}<a href="{{ link.url | relative_url }}">[{{ link.label }}]</a>{% endfor %}
+  {% for video in project.videos %}<a href="#{{ project.id }}-video-{{ forloop.index }}" data-video-target="{{ project.id }}-video-{{ forloop.index }}">[Video{% if project.videos.size > 1 %} {{ forloop.index }}{% endif %}]</a>{% endfor %}
+</li>
+{% endif %}

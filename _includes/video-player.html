@@ -1,0 +1,11 @@
+{% assign video = include.video %}
+<figure class="project-media"{% if include.id %} id="{{ include.id | escape }}"{% endif %}>
+  <div class="project-player">
+    <video controls playsinline preload="none" poster="{{ video.poster | relative_url }}" width="{{ video.width }}" height="{{ video.height }}" style="aspect-ratio: {{ video.width }} / {{ video.height }};" aria-label="{{ video.title | escape }}">
+      <source src="{{ video.src | relative_url }}" type="video/mp4">
+      <a href="{{ video.src | relative_url }}">Watch {{ video.title }}</a>
+    </video>
+    <button class="project-play-button" type="button" aria-label="Play {{ video.title | escape }}" hidden><span class="project-play-icon" aria-hidden="true"></span></button>
+  </div>
+  <figcaption>{{ video.title }}{% if video.duration %}<span class="project-video-duration"> · {{ video.duration }}</span>{% endif %}</figcaption>
+</figure>

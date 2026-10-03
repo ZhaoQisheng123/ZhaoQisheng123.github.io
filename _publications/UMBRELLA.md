@@ -1,37 +1,45 @@
 ---
-title: "UMBRELLA: Uncertainty-aware Multi-roBot REactive Coordination under Dynamic TemporaL Logic TAsk"
+layout: academic
+title: "UMBRELLA: Uncertainty-aware Multi-robot Reactive Coordination under Dynamic Temporal Logic Tasks"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-umbrella-icra
-excerpt: 'We propose UMBRELLA, a novel framework for uncertainty-aware multi-robot reactive coordination under dynamic temporal logic tasks, demonstrating effectiveness through simulations and hardware experiments.'
+excerpt: "Uncertainty-aware task allocation and reactive planning for robot teams coordinating around moving targets."
 date: 2026-05-01
-venue: 'IEEE International Conference on Robotics and Automation (ICRA)'
-venueurl: 'coming soon'
-paperurl: 'coming soon'
-codeurl: 'coming soon'
-citation: 'Zhao, Q., Guo, M., Du, H., Lindemann, L., & Li, Z. (2026). UMBRELLA: Uncertainty-aware Multi-roBot REactive Coordination under Dynamic TemporaL Logic TAsk. <i>IEEE International Conference on Robotics and Automation (ICRA)</i>.'
+venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+venue_short: "ICRA 2026"
+status: "ICRA 2026 · First author"
+paperurl: https://arxiv.org/abs/2603.25395
+bibtexurl: /files/umbrella.bib
+image: /images/publications/umbrella-framework.png
+image_alt: "UMBRELLA framework: conformal trajectory prediction, temporal-logic task decomposition, CP-MCTS assignment, and reactive replanning."
+image_width: 2894
+image_height: 992
+authors:
+  - name: Qisheng Zhao
+  - name: Meng Guo
+  - name: Hengxuan Du
+  - name: Lars Lindemann
+  - name: Zhongkui Li
+citation: 'Zhao, Q., Guo, M., Du, H., Lindemann, L., & Li, Z. (2026). UMBRELLA: Uncertainty-aware Multi-robot Reactive Coordination under Dynamic Temporal Logic Tasks. <i>ICRA</i>.'
+share: false
+comments: false
+related: false
+video:
+  title: UMBRELLA overview, simulations & hardware experiments
+  src: /files/publications/umbrella-final.mp4
+  poster: /images/publications/umbrella-final.jpg
+  width: 1920
+  height: 1080
+  duration: "2:57"
 ---
-## Abstract
 
-This paper presents UMBRELLA, a novel framework for uncertainty-aware multi-robot reactive coordination under dynamic temporal logic tasks. The proposed approach addresses the challenge of coordinating multiple robots in dynamic environments where tasks are specified using temporal logic and uncertainty must be explicitly considered. Our framework combines reactive planning with uncertainty quantification to enable robust multi-robot coordination.
+UMBRELLA combines conformal trajectory prediction, temporal-logic task decomposition, risk-aware CP-MCTS assignment, and event-triggered replanning.
 
-## Key Contributions
+Compared with static baselines, it reduces **average makespan by 23%** and **its variance by 71%**, with validation in simulation and on real robots.
 
-- **Uncertainty-aware Coordination**: A novel framework that explicitly considers uncertainty in multi-robot coordination
-- **Dynamic Temporal Logic Tasks**: Support for temporal logic task specifications that can change dynamically
-- **Reactive Planning**: Real-time adaptation to environmental changes and task modifications
-- **Comprehensive Evaluation**: Validation through both simulation and hardware experiments
+**My contribution:** First-author research spanning algorithm design, implementation, and experimental validation.
 
-## Experimental Results
+## Video
 
-Our evaluation demonstrates the effectiveness of UMBRELLA across three scenarios:
-
-1. **Task Planning**: 12 robots coordinating to track 4 dynamic targets across 12 tasks in multiple scenes
-2. **ROS Simulation**: 8 robots and 3 dynamic targets executing 10 tasks in a city-like environment
-3. **Hardware Experiments**: 4 physical robots and 2 dynamic targets performing 7 tasks with real-world constraints
-
-The results show significant improvements in task completion rates and coordination efficiency compared to baseline methods.
-
-## Code and Data
-
-The implementation and experimental data will be available soon.
+{% include video-player.html video=page.video %}

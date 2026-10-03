@@ -1,0 +1,9 @@
+{% assign paper = include.paper %}
+<p class="paper-authors">{% for author in paper.authors %}{% if author.name == site.author.name %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.equal %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+<p class="paper-venue">{{ paper.venue_short }}</p>
+<div class="paper-links">
+  <a href="{{ paper.paperurl }}">arXiv</a>
+  {% if paper.video %}<span aria-hidden="true">|</span><a href="{{ paper.url | relative_url }}#video">Video</a>{% endif %}
+  {% if paper.projecturl %}<span aria-hidden="true">|</span><a href="{{ paper.projecturl }}">Project</a>{% endif %}
+  {% if paper.bibtexurl %}<span aria-hidden="true">|</span><a href="{{ paper.bibtexurl | relative_url }}">bibtex</a>{% endif %}
+</div>

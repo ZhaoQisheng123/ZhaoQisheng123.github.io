@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Qisheng Zhao",
-    "email": "2301213177@stu.pku.edu.cn",
+    "email": "qishengzhao66@gmail.com",
     "phone": "15279400369",
     "website": "https://ZhaoQisheng123.github.io",
-    "summary": "Master's student at Peking University focusing on multi-robot task and motion planning, with interests in mobile manipulation and autonomous robotics.",
+    "summary": "VLA and WAM pre-training for embodied manipulation. Previous work in vision-language navigation, autonomous exploration and navigation, and multi-robot collaborative planning.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -23,194 +23,144 @@
         "username": "zqs1098840583",
         "url": ""
       }
-    ]
+    ],
+    "workEmail": "kevin@manifoldai.cn"
   },
   "work": [
     {
-      "company": "Zhiyue Space Intelligent Technology Co., Ltd.",
-      "position": "Autonomous Exploration and Navigation Module Leader",
-      "website": "",
-      "startDate": "2025-04",
-      "endDate": "2025-08",
-      "summary": "Responsible for the design and development of the company's active 3D reconstruction robot's autonomous exploration and navigation module, achieving efficient exploration, reconstruction, and motion planning.",
+      "company": "Manifold AI",
+      "position": "Embodied Manipulation Algorithm Engineer",
+      "summary": "Pre-training VLA and WAM models for embodied manipulation.",
+      "current": true,
+      "logo": "/images/experience/manifold.svg",
+      "logoStyle": "manifold",
+      "logoSource": "https://manifoldai.cn/assets/img/Logo_AccentColor.svg"
+    },
+    {
+      "company": "Galbot",
+      "position": "Large Model Algorithm Intern",
+      "startDate": "2025-11",
+      "summary": "Motion-planning data pipelines, Isaac Sim scenes, and VLA navigation evaluation.",
+      "endDate": "2026-03",
+      "logo": "/images/experience/galbot.svg",
+      "logoStyle": "galbot",
+      "logoSource": "https://www.galbot.com/",
       "highlights": [
-        "Design and development of exploration and navigation algorithm modules",
-        "ROS integration and deployment on the robot chassis",
-        "Experimental testing in complex and diverse scenarios"
+        "Motion-planning and 3D occupancy data pipelines.",
+        "Outdoor scene generation in Isaac Sim.",
+        "VLA navigation evaluation for SPAN-Nav."
       ]
     },
     {
-      "company": "ZF China Investment Co., Ltd.",
-      "position": "Software Testing Department Intern",
-      "website": "",
-      "startDate": "2023-02",
-      "endDate": "2023-05",
-      "summary": "Participated in functional testing and regression verification of in-vehicle software systems, assisted in completing multi-version system functional verification and automated script writing.",
+      "company": "CogLeap.AI",
+      "position": "Autonomous Exploration & Navigation Algorithm Intern",
+      "startDate": "2025-04",
+      "endDate": "2025-10",
+      "summary": "RRT-based exploration, TARE-style planning, and ROS2 Navigation2 deployment.",
+      "logo": "/images/experience/cogleap-hd.jpg",
+      "logoStyle": "cogleap",
+      "logoSource": "https://www.innohere.com/ir/160060/general.html",
       "highlights": [
-        "Writing Python-based functional modules and test scripts",
-        "Writing test manuals and reproduction process documentation"
+        "RRT-based exploration and TARE-style planning.",
+        "ROS2 Navigation2 integration and robot deployment."
       ]
     }
   ],
   "education": [
     {
       "institution": "Peking University",
-      "area": "Advanced Manufacturing and Intelligent Systems",
-      "studyType": "Master's Degree",
+      "area": "Mechanical Engineering",
+      "studyType": "Master's degree",
       "startDate": "2023-09",
-      "endDate": "2026-07",
-      "gpa": "3.66/4.00",
-      "courses": [
-        "Artificial Intelligence and Autonomous Robots",
-        "Principles of Reinforcement Learning",
-        "AI Methods and Applications",
-        "Hybrid Control Systems",
-        "Advanced Robot Control",
-        "Multi-Agent Systems",
-        "Python Big Data Analysis Principles and Applications",
-        "Data Visualization"
-      ]
+      "endDate": "2026-06",
+      "department": "College of Engineering (CoE)",
+      "logo": "/images/education/pku-emblem.png",
+      "logoSource": "https://vim.pku.edu.cn/xzzq/"
     },
     {
       "institution": "Tongji University",
       "area": "Mechatronics Engineering",
-      "studyType": "Bachelor's Degree",
+      "studyType": "Bachelor's degree",
       "startDate": "2019-09",
-      "endDate": "2023-07",
-      "gpa": "4.62/5.00",
-      "courses": [
-        "Principles of Automatic Control",
-        "Signals and Systems",
-        "Network and Industrial Communication",
-        "System Modeling and Simulation",
-        "Python",
-        "C++",
-        "Linear Algebra"
-      ]
+      "endDate": "2023-06",
+      "department": "Sino-German College of Applied Sciences (CDHAW)",
+      "logo": "/images/education/tongji-emblem-hd.png",
+      "logoSource": "https://xxgk.tongji.edu.cn/index.php?classid=3080&newsid=6829&t=show"
     }
   ],
   "skills": [
     {
-      "name": "Task Decision Algorithms",
-      "level": "Advanced",
-      "keywords": [
-        "Automata",
-        "Behavior Trees",
-        "Formal Methods",
-        "Reinforcement Learning"
-      ]
-    },
-    {
-      "name": "Motion Planning Algorithms",
-      "level": "Advanced",
-      "keywords": [
-        "Dijkstra",
-        "A*",
-        "RRT",
-        "Optimal Transport"
-      ]
-    },
-    {
-      "name": "Programming Languages",
-      "level": "Advanced",
+      "name": "Engineering",
       "keywords": [
         "Python",
         "C++",
-        "ROS",
-        "Navigation2",
-        "Linux",
-        "LTL2BA"
+        "ROS1/ROS2",
+        "Isaac Sim",
+        "Navigation2"
       ]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Advanced",
       "certifications": [
         "CET-6 (559)",
         "IELTS (6.5)"
       ]
-    },
-    {
-      "language": "German",
-      "fluency": "Intermediate",
-      "certifications": [
-        "TestDaf (19/20)"
-      ]
-    },
-    {
-      "language": "Chinese",
-      "fluency": "Native"
     }
   ],
-  "interests": [
-    {
-      "name": "Long-horizon Mobile Manipulation",
-      "keywords": [
-        "Sequential Task Planning",
-        "Mobile Manipulation",
-        "Long-term Coordination"
-      ]
-    },
-    {
-      "name": "Multi-robot Systems",
-      "keywords": [
-        "Task Allocation",
-        "Motion Planning",
-        "Coordination"
-      ]
-    },
-    {
-      "name": "Autonomous Robotics",
-      "keywords": [
-        "SLAM",
-        "Navigation",
-        "Exploration"
-      ]
-    },
-    {
-      "name": "Formal Methods in Robotics",
-      "keywords": [
-        "Temporal Logic",
-        "Verification",
-        "Uncertainty Quantification"
-      ]
-    }
-  ],
+  "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "UMBRELLA: Uncertainty-aware Multi-roBot REactive Coordination under Dynamic Temporal Logic TAsks",
-      "publisher": "IEEE International Conference on Robotics and Automation (ICRA)",
-      "releaseDate": "2025-05-01",
-      "website": "",
-      "summary": "First author paper on multi-robot coordination under uncertainty and dynamic temporal logic tasks."
+      "name": "UMBRELLA",
+      "publisher": "ICRA 2026",
+      "releaseDate": "2026",
+      "website": "https://arxiv.org/abs/2603.25395",
+      "summary": "First author."
+    },
+    {
+      "name": "SPAN-Nav",
+      "publisher": "CoRL 2026",
+      "releaseDate": "2026-03-10",
+      "website": "https://arxiv.org/abs/2603.09163",
+      "summary": "Coauthor."
+    },
+    {
+      "name": "IMPACT",
+      "summary": "Manuscript in preparation."
     }
   ],
   "presentations": [],
   "teaching": [],
   "portfolio": [
     {
-      "name": "Multi-robot Reactive Collaborative Planning",
-      "category": "research",
-      "date": "2024-06",
-      "url": "",
-      "description": "Project focusing on task allocation algorithms for heterogeneous robot systems with complex temporal constraints and mobile target associations."
+      "name": "Autonomous surgical robotics",
+      "date": "2025-12",
+      "description": "Core member. Task-network coordination, VLA skills, world-model-assisted data augmentation, constraint monitoring, and recovery."
     },
     {
-      "name": "Honor of Kings Battle Strategy Optimization",
-      "category": "research",
-      "date": "2025-06",
-      "url": "",
-      "description": "Reinforcement learning adversarial model for game scenario with five heterogeneous intelligent agents fighting a tyrant."
+      "name": "Autonomous exploration & navigation",
+      "date": "2025-04",
+      "endDate": "2025-10",
+      "description": "CogLeap.AI internship. ERRT frontier exploration, TARE-style hierarchical planning, and ROS2 Navigation2 deployment on a mobile robot."
     },
     {
-      "name": "Mujoco Robotic Arm Grasping Simulation",
-      "category": "research",
-      "date": "2025-05",
-      "url": "",
-      "description": "GraspNet model deployment in Mujoco simulation for robotic arm grasping experiments in multi-object scenarios."
+      "name": "Fast task allocation & online replanning",
+      "date": "2024-04",
+      "endDate": "2024-11",
+      "description": "Project lead. Temporal-logic modeling, partial-order analysis, branch-and-bound allocation, and online replanning."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Gold Medal and Special Award, 77th iENA"
+    },
+    {
+      "title": "Peking University Scholarship"
+    },
+    {
+      "title": "Tongji University Outstanding Undergraduate Graduate"
     }
   ]
 }

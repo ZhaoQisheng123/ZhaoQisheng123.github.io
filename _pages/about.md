@@ -1,31 +1,47 @@
 ---
+layout: academic
 permalink: /
-title: "Qisheng Zhao (赵祺晟)"
-author_profile: true
-redirect_from: 
+title: "Home"
+display_title: "Qisheng Zhao"
+description: "Qisheng Zhao, Embodied Manipulation Algorithm Engineer at Manifold AI, focusing on VLA and WAM pre-training."
+redirect_from:
   - /about/
   - /about.html
 ---
-👋 About Me
-======
-I am currently pursuing a Master's degree at the School of Advanced Manufacturing and Robotics, Peking University (2023-present), under the supervision of [Prof. Zhongkui Li (李忠奎)](https://www.zhongkuili-pku.com/cn/), and collaborating closely with [Prof. Meng Guo (国萌)](https://mengguo.github.io/personal_site/index.html). 
-Prior to that, I received my Bachelor's degree in Mechatronics Engineering from the CDHAW at Tongji University.
 
+<div class="profile-intro">
+  <img class="profile-photo" src="{{ '/images/ZQS-03.png' | relative_url }}" alt="Qisheng Zhao" width="174" height="174">
+  <div>
+    <p class="profile-name">Qisheng Zhao (<span class="name-zh" lang="zh">赵祺晟</span>)</p>
+    <p>{{ site.author.role }}<br>{{ site.author.employer }}</p>
+    <p class="profile-email">
+      <span class="email-row"><span class="email-label">Personal Email:</span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></span>
+      <span class="email-row"><span class="email-label">Work Email:</span><a href="mailto:{{ site.author.work_email }}">{{ site.author.work_email }}</a></span>
+    </p>
+  </div>
+</div>
 
-My research focuses on **multi-robot coordination, task decision-making, and motion planning in dynamic and unknown environments**. I am particularly interested in **robotic mobile manipulation under long-horizon sequential tasks**, where robots must perform complex manipulation operations while navigating through dynamic environments over extended time periods.
+## About
 
-🤖**Long-term Goal:**  I hope to contribute to the advancement of robotics by developing robust algorithms for long-horizon mobile manipulation tasks, enabling robots to perform complex sequential operations in real-world environments. My vision is to bridge the gap between theoretical multi-robot coordination and practical household robotics applications, ultimately helping robots become reliable assistants that can seamlessly integrate into daily life.
+My current focus is pre-training **VLA and WAM** foundation models for embodied manipulation. My earlier work spans vision-language navigation (VLN), autonomous exploration and navigation, and multi-robot collaborative planning.
 
-🔍 Opportunities
-======
-I am currently seeking **Ph.D. positions and career opportunities in the field of embodied intelligence**. If you have any suitable opportunities, please feel free to contact me anytime!
+At Peking University, I worked with [Prof. Zhongkui Li (李忠奎)](https://www.zhongkuili-pku.com/cn/) and [Prof. Meng Guo (国萌)](https://mengguo.github.io/personal_site/index.html).
 
-📚 Education
-======
-- **M.S.** 2023.09 - 2026.07 (expected), Master's in Mechanical Engineering (Advanced Manufacturing and Intelligent Systems), School of Advanced Manufacturing and Robotics, Peking University, Beijing.
-- **B.S.** 2019.09 - 2023.07, Bachelor's in Mechatronics Engineering, CDHAW, Tongji University, Shanghai.
+{% include background.html %}
 
-📄 Publications
-======
-- **UMBRELLA: Uncertainty-aware Multi-roBot REactive Coordination under Dynamic TemporaL Logic TAsk**  
-  *Submitted to ICRA 2026*
+## Publications
+
+<p class="author-note">* Equal contribution</p>
+<div class="paper-list">
+  {% assign papers = site.publications | sort: 'date' | reverse %}
+  {% for paper in papers %}{% include paper-row.html paper=paper %}{% endfor %}
+</div>
+
+## Projects
+
+<div class="project-list">
+  {% assign featured_projects = site.data.projects | where: 'featured', true %}
+  {% for project in featured_projects %}{% include project-row.html project=project link_title=true %}{% endfor %}
+</div>
+
+<p class="all-projects-link"><a href="{{ '/projects/' | relative_url }}">View all projects & demos →</a></p>

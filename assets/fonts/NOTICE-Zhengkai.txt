@@ -1,0 +1,6 @@
+Modified on 2026-10-03: AR PL UKai CN was subset to Chinese glyphs, converted to WOFF2, and renamed Academic Zhengkai. Glyph outlines are unchanged.
+
+Original source:
+https://deb.debian.org/debian/pool/main/f/fonts-arphic-ukai/fonts-arphic-ukai_0.2.20080216.2.orig.tar.bz2
+
+Both webfont subsets remain available under the included Arphic Public License.

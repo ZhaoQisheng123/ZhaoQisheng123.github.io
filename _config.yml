@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Qisheng Zhao"
 title_separator          : "-"
 name                     : &name "Qisheng Zhao"
-description              : &description "Qisheng Zhao's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "VLA and WAM pre-training for embodied manipulation."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://ZhaoQisheng123.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,11 +26,13 @@ author:
   avatar           : "ZQS-03.png"
   name             : "Qisheng Zhao"
   pronouns         : "he/him"  
-  bio              : "Focusing on multi-robot task and motion planning, with interests in mobile manipulation."
+  bio              : "VLA and WAM pre-training for embodied manipulation."
   location         : "Beijing, China"
-  employer         : "Peking University"
+  employer         : "Manifold AI"
+  role             : "Embodied Manipulation Algorithm Engineer"
   uri              : # URL
-  email            : "2301213177@stu.pku.edu.cn" 
+  email            : "qishengzhao66@gmail.com"
+  work_email       : "kevin@manifoldai.cn"
 
   # Academic websites
   # academia         : # URL
@@ -93,7 +95,7 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
@@ -164,6 +166,40 @@ include:
   - _pages
   - files
 exclude:
+  # Keep template examples and source-only guides out of the public site.
+  - _posts
+  - _drafts
+  - _portfolio
+  - _talks
+  - _teaching
+  - _publications/patent-adaptive-planning.md
+  - _publications/patent-collaborative-tasks.md
+  - _publications/patent-digital-collaborative.md
+  - _publications/patent-swarm-allocation.md
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - 个人信息填写指南.md
+  - 我的个人信息模板.md
+  - CONTRIBUTING.md
+  - scripts
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
+  - docker-compose.yaml
+  - _config_docker.yml
+  - README.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

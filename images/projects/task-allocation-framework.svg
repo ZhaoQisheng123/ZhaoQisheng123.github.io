@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="930" viewBox="0 0 1200 930" role="img" aria-labelledby="title description">
+  <title id="title">Fast Task Allocation and Online Replanning — Algorithm Framework</title>
+  <desc id="description">Pre-execution planning for collaborative agent teams and task updates during execution feed a three-stage framework. Formal logic task specifications integrate prior rules. Task automata are preprocessed and subtasks decomposed into partial orders under spatiotemporal constraints. Branch-and-bound search uses upper and lower bounds and online plan adjustment to produce an agent team execution plan and updated agent–task assignments.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .title { fill: #183b5b; font-size: 32px; font-weight: 700; }
+      .subtitle { fill: #68717a; font-size: 19px; }
+      .input-label { fill: #183b5b; font-size: 25px; font-weight: 600; }
+      .stage-label { fill: #183b5b; font-size: 27px; font-weight: 700; }
+      .step-number { fill: #fff; font-size: 25px; font-weight: 700; }
+      .method-label { fill: #26313d; font-size: 24px; font-weight: 600; }
+      .output-label { fill: #183b5b; font-size: 25px; font-weight: 600; }
+      .flow { fill: #476681; }
+      .stage-flow { fill: #98a9b9; }
+    </style>
+  </defs>
+  <rect width="1200" height="930" fill="#fff"/>
+  <text class="title" x="600" y="49">Fast Task Allocation &amp; Online Replanning</text>
+  <text class="subtitle" x="600" y="80">Algorithm framework for collaborative agents</text>
+
+  <g id="inputs">
+    <rect x="96" y="109" width="480" height="91" rx="15" fill="#dbe8f3" stroke="#c7d9e7"/>
+    <rect x="624" y="109" width="480" height="91" rx="15" fill="#dbe8f3" stroke="#c7d9e7"/>
+    <text class="input-label" x="336" y="146"><tspan x="336">Pre-execution planning</tspan><tspan x="336" dy="32">for collaborative agent teams</tspan></text>
+    <text class="input-label" x="864" y="146"><tspan x="864">Task &amp; objective updates</tspan><tspan x="864" dy="32">during agent execution</tspan></text>
+  </g>
+  <path class="flow" d="M332 204H340V222H349L336 234L323 222H332Z"/>
+  <path class="flow" d="M860 204H868V222H877L864 234L851 222H860Z"/>
+
+  <g id="stage-1">
+    <rect x="40" y="238" width="1120" height="146" rx="18" fill="#e2eef6" stroke="#d1e1ed"/>
+    <circle cx="83" cy="274" r="20" fill="#963d43"/>
+    <text class="step-number" x="83" y="283">1</text>
+    <text class="stage-label" x="622" y="283">Formal Logic Task Specification &amp; Prior Rule Integration</text>
+    <rect x="105" y="309" width="471" height="54" rx="10" fill="#fff4d0"/>
+    <rect x="624" y="309" width="471" height="54" rx="10" fill="#fff4d0"/>
+    <text class="method-label" x="340" y="344">Collaborative Task Specification</text>
+    <text class="method-label" x="860" y="344">Prior Rule Design</text>
+  </g>
+  <path class="stage-flow" d="M596 394H604V412H613L600 424L587 412H596Z"/>
+
+  <g id="stage-2">
+    <rect x="40" y="434" width="1120" height="146" rx="18" fill="#e5ebf5" stroke="#d4dfed"/>
+    <circle cx="83" cy="470" r="20" fill="#963d43"/>
+    <text class="step-number" x="83" y="479">2</text>
+    <text class="stage-label" x="622" y="479">Time-sensitive Task Decomposition under Spatiotemporal Constraints</text>
+    <rect x="105" y="505" width="471" height="54" rx="10" fill="#fff4d0"/>
+    <rect x="624" y="505" width="471" height="54" rx="10" fill="#fff4d0"/>
+    <text class="method-label" x="340" y="540">Task Automaton Preprocessing</text>
+    <text class="method-label" x="860" y="540">Subtask Partial-order Computation</text>
+  </g>
+  <path class="stage-flow" d="M596 590H604V608H613L600 620L587 608H596Z"/>
+
+  <g id="stage-3">
+    <rect x="40" y="630" width="1120" height="146" rx="18" fill="#e5ebf5" stroke="#d4dfed"/>
+    <circle cx="83" cy="666" r="20" fill="#963d43"/>
+    <text class="step-number" x="83" y="675">3</text>
+    <text class="stage-label" x="622" y="675">Branch-and-Bound Allocation &amp; Online Replanning</text>
+    <rect x="105" y="696" width="300" height="65" rx="10" fill="#fff4d0"/>
+    <rect x="450" y="696" width="300" height="65" rx="10" fill="#fff4d0"/>
+    <rect x="795" y="696" width="300" height="65" rx="10" fill="#fff4d0"/>
+    <text class="method-label" x="255" y="723"><tspan x="255">Branch-and-Bound</tspan><tspan x="255" dy="27">Search</tspan></text>
+    <text class="method-label" x="600" y="723"><tspan x="600">Upper &amp; Lower</tspan><tspan x="600" dy="27">Bound Design</tspan></text>
+    <text class="method-label" x="945" y="723"><tspan x="945">Online Plan</tspan><tspan x="945" dy="27">Adjustment</tspan></text>
+  </g>
+  <path class="flow" d="M332 788.5H340V806.5H349L336 818.5L323 806.5H332Z"/>
+  <path class="flow" d="M860 788.5H868V806.5H877L864 818.5L851 806.5H860Z"/>
+
+  <g id="outputs">
+    <rect x="96" y="831" width="480" height="66" rx="13" fill="#dbe8f3" stroke="#c7d9e7"/>
+    <rect x="624" y="831" width="480" height="66" rx="13" fill="#dbe8f3" stroke="#c7d9e7"/>
+    <text class="output-label" x="336" y="873">Agent Team Execution Plan</text>
+    <text class="output-label" x="864" y="873">Updated Agent–Task Assignments</text>
+  </g>
+</svg>

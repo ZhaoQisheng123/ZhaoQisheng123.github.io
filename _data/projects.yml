@@ -1,0 +1,115 @@
+- id: surgical-robotics
+  title: Autonomous Surgical Robotics
+  thumbnail: /images/projects/safe-toumai.jpg
+  thumbnail_alt: SAFE-Toumai surgical robotics exhibition.
+  thumbnail_width: 1600
+  thumbnail_height: 890
+  featured: true
+  summary: Task planning and VLA-based skill execution for autonomous laparoscopic manipulation.
+  highlights:
+    - Task-network planning for multi-arm coordination and skill switching.
+    - World-model-assisted data augmentation for VLA skills.
+    - Constraint monitoring and online recovery during execution.
+  prototype:
+    title: "Related prototype: SAFE-Toumai teleoperation"
+    summary: Visual–tactile feedback and assistive motion control.
+    highlights:
+      - "Force estimation from structured-light vision and robot dynamics, with reported error below 0.5 N."
+      - Camera–arm coordination under visibility and joint-velocity constraints.
+      - Hand-tremor filtering and organ-motion compensation.
+  images:
+    - src: /images/projects/safe-toumai.jpg
+      alt: SAFE-Toumai surgical robot demonstration and exhibition at iENA 2025.
+      width: 1600
+      height: 890
+      caption: "SAFE-Toumai at iENA 2025 — Gold Medal & Special Award."
+  videos:
+    - title: SAFE-Toumai teleoperation & assistive control
+      src: /files/projects/safe-toumai.mp4
+      poster: /images/projects/safe-toumai-video.jpg
+      width: 1920
+      height: 1080
+      duration: "2:59"
+
+- id: exploration-navigation
+  title: Autonomous Exploration & Navigation
+  thumbnail: /images/projects/rrt-exploration.jpg
+  thumbnail_alt: Mobile robot exploration and its mapped environment.
+  thumbnail_width: 1280
+  thumbnail_height: 720
+  featured: true
+  summary: Autonomous indoor exploration and navigation on a mobile robot.
+  highlights:
+    - RRT-based frontier exploration.
+    - TARE-style hierarchical exploration.
+    - Mapping, path tracking with ROS 2 Navigation2, and indoor robot deployment.
+  videos:
+    - title: RRT exploration on a mobile robot
+      src: /files/projects/rrt-exploration.mp4
+      poster: /images/projects/rrt-exploration.jpg
+      width: 1600
+      height: 900
+      duration: "0:53"
+    - title: TARE exploration & Navigation2
+      src: /files/projects/tare-exploration.mp4
+      poster: /images/projects/tare-exploration.jpg
+      width: 1600
+      height: 852
+      duration: "1:32"
+
+- id: simulation-navigation
+  title: Data Pipelines and VLN Evaluation
+  thumbnail: /images/projects/isaac-navigation.jpg
+  thumbnail_alt: Navigation and occupancy mapping in Isaac Sim.
+  thumbnail_width: 1280
+  thumbnail_height: 640
+  summary: Simulation data pipelines and vision-language navigation evaluation.
+  highlights:
+    - Motion-planning trajectory collection and 3D occupancy data preparation.
+    - Automated outdoor scene generation and asset placement in Isaac Sim.
+    - Video-to-3D perception benchmarking and SPAN-Nav evaluation on MetaUrban and UrbanSim.
+  links:
+    - label: SPAN-Nav paper
+      url: /publication/2026-span-nav
+  videos:
+    - title: A* + velocity-obstacle navigation in Isaac Sim
+      src: /files/projects/isaac-navigation.mp4
+      poster: /images/projects/isaac-navigation.jpg
+      width: 1920
+      height: 960
+      duration: "0:11"
+    - title: SPAN-Nav navigation evaluation
+      src: /files/projects/span-nav.mp4
+      poster: /images/projects/span-nav.jpg
+      width: 1376
+      height: 768
+      duration: "1:10"
+
+- id: task-allocation
+  media_layout: stacked
+  media_order: [images, videos]
+  title: Fast Task Allocation & Online Replanning
+  thumbnail: /images/projects/task-allocation-framework.svg
+  thumbnail_alt: Three-stage algorithm framework for collaborative agents, from formal task specifications through decomposition to allocation and replanning.
+  thumbnail_width: 1200
+  thumbnail_height: 930
+  featured: true
+  summary: Constraint-aware task allocation and online replanning for heterogeneous robot teams.
+  highlights:
+    - LTL task modeling and partial-order decomposition for parallel execution.
+    - Capability, resource, and time-window constraints for synchronized multi-robot tasks.
+    - Anytime branch-and-bound search for feasible schedules and shorter makespans within a time budget.
+    - Replanning unfinished tasks after agent availability changes or task additions and cancellations.
+  images:
+    - src: /images/projects/task-allocation-framework.svg
+      alt: Formal logic task specification and prior rule integration, spatiotemporal task decomposition, and branch-and-bound allocation with online replanning for agent teams.
+      width: 1200
+      height: 930
+      caption: Three-stage framework for multi-agent task allocation and online replanning.
+  videos:
+    - title: Task allocation & online replanning simulation
+      src: /files/projects/task-allocation-demo.mp4
+      poster: /images/projects/task-allocation-demo.jpg
+      width: 1280
+      height: 544
+      duration: "0:18"

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    {% assign academic_css = site.static_files | where: 'path', '/assets/css/academic.css' | first %}
+    <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v={{ academic_css.modified_time | date: '%s' }}">
+    <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <meta name="theme-color" content="#eef2f5">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="academic-shell">
+      <aside class="academic-sidebar">
+        <nav class="academic-nav" aria-label="Main navigation">
+          {% assign groups = site.data.navigation.main | group_by: 'group' %}
+          {% for group in groups %}
+          <div class="nav-group">
+            <p class="nav-label">{{ group.name }}</p>
+            <ul>
+              {% for item in group.items %}
+              <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url or item.url == '/publications/' and page.collection == 'publications' %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+        </nav>
+      </aside>
+      <div class="academic-body">
+        <main id="main-content" class="academic-content{% if page.collection == 'publications' %} paper-detail{% endif %}">
+          {% if page.collection == 'publications' %}<p class="back-link"><a href="{{ '/publications/' | relative_url }}">← Publications</a></p>{% endif %}
+          <h1>{{ page.display_title | default: page.title | escape }}</h1>
+          {% if page.collection == 'publications' %}
+          {% include paper-metadata.html paper=page %}
+          {% if page.equal_note %}<p class="author-note">* Equal contribution</p>{% endif %}
+          <img class="paper-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">
+          {% endif %}
+          {{ content }}
+        </main>
+        <footer class="academic-footer">© {{ site.time | date: '%Y' }} Qisheng Zhao</footer>
+      </div>
+    </div>
+    {% if page.url == '/projects/' or page.video %}
+    {% assign project_video_js = site.static_files | where: 'path', '/assets/js/project-videos.js' | first %}
+    <script src="{{ '/assets/js/project-videos.js' | relative_url }}?v={{ project_video_js.modified_time | date: '%s' }}" defer></script>
+    {% endif %}
+  </body>
+</html>
